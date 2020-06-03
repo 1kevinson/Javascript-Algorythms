@@ -2,6 +2,17 @@
  * @ISPRIME Check if number entered is prime number
  */
 
+// TIME COMPLEXITY VALUES
+
+/**
+ *  @CONSTANT  O(1).                 ----  Best
+ *
+ *  @LINEAR     O(n)                 ----  Average
+ *
+ *  @QUADRATIC  Θ(nk), where k ≥ 2   ----  Worst
+ *
+ * */
+
 // First solution
 function isPrime(number) {
   let result = false;
@@ -26,13 +37,17 @@ function isPrime(number) {
 
 // Second Solution
 function isPrime2(number) {
-  for (let i = 2; i < number; i++) {
+  for (let i = 2; i < Math.sqrt(number); i++) {
     if (number % i === 0) {
       return false;
     }
   }
   return true;
 }
+
+// Best case: number = 1 OR number = 2 => O(1)
+// Average Case: O(n)
+// Worst Case: number = 27,77 => 0(n) (Improved: 0(sqrt(n)))
 
 let start = performance.now();
 isPrime2(37); // Take lower time
@@ -46,3 +61,17 @@ console.log(end - start);
 
 console.log(isPrime(13)); // true
 console.log(isPrime(22)); // false
+
+/*
+Complexity
+**********
+_____________________________
+Θ(1)	            Good news
+Θ(log n)
+Θ(n)
+Θ(n log n)
+
+_____________________________
+Θ(nk), where k ≥ 2	Bad news
+Θ(kn), where k ≥ 2
+Θ(n!)*/
