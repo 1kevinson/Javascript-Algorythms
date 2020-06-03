@@ -2,17 +2,6 @@
  * @ISPRIME Check if number entered is prime number
  */
 
-// TIME COMPLEXITY VALUES
-
-/**
- *  @CONSTANT  O(1).                 ----  Best
- *
- *  @LINEAR     O(n)                 ----  Average
- *
- *  @QUADRATIC  Θ(nk), where k ≥ 2   ----  Worst
- *
- * */
-
 // First solution
 function isPrime(number) {
   let result = false;
@@ -61,17 +50,3 @@ console.log(end - start);
 
 console.log(isPrime(13)); // true
 console.log(isPrime(22)); // false
-
-/*
-Complexity
-**********
-_____________________________
-Θ(1)	            Good news
-Θ(log n)
-Θ(n)
-Θ(n log n)
-
-_____________________________
-Θ(nk), where k ≥ 2	Bad news
-Θ(kn), where k ≥ 2
-Θ(n!)*/
