@@ -7,7 +7,7 @@ function sumNumbers(arrayOfNumbers) {
   return arrayOfNumbers.reduce((a, b) => a + b, 0);
 }
 
-// Solution 2 -> (Best way is to built our algorihtms)
+// Solution 2 -> (Best way is to built our algorithms)
 function sumNumbers2(arrayOfNumbers) {
   let result = 0;
 
