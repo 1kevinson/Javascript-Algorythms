@@ -19,7 +19,7 @@ function factorial(number) {
   return result;
 }
 
-//SECOND SOLUTION
+//SECOND SOLUTION (BEST CASE)
 function factorial2(number) {
   if (number < 0) {
     throw new Error("Cannot proceed the factorial");
@@ -34,4 +34,4 @@ function factorial2(number) {
 
 console.log(factorial(5));
 console.log(factorial2(4));
-console.log(factorial2(3));
+console.log(factorial2(1));
