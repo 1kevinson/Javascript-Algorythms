@@ -1,4 +1,4 @@
-// Solution  -> (Best way is to built our algorithms instead of use built in function)
+// Solution  -> (Best way is to built our algorithms-fundamentals instead of use built in function)
 function sumNumbers2(arrayOfNumbers) {
   let result = 0;
 
