@@ -4,6 +4,7 @@
  */
 
 let counter = 0;
+const memo = {};
 
 function fib(n, memo) {
   let result;
@@ -23,14 +24,17 @@ function fib(n, memo) {
   return result;
 }
 
-console.log(fib(5, {}));
+console.log(fib(5, memo));
 console.log("counter => ", counter);
+console.log(memo);
 counter = 0;
 
-console.log(fib(20, {}));
+console.log(fib(20, memo));
 console.log("counter => ", counter);
+console.log(memo);
 counter = 0;
 
-console.log(fib(50, {}));
+console.log(fib(6, memo));
 console.log("counter => ", counter);
+console.log(memo);
 counter = 0;
