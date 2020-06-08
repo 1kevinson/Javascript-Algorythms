@@ -4,6 +4,7 @@
  */
 
 function sort(arr) {
+  // Copy the array in parameter without modifying his values
   const resultArray = [...arr];
 
   for (let outer = 0; outer < resultArray.length; outer++) {
