@@ -15,6 +15,16 @@ function cartProduct(setA, setB) {
   return product;
 }
 
-const colors = ["blue", "red", "black"];
-const sizes = ["s", "m", "l"];
+function cartesian(...sets) {
+  let tempProduct = sets[0];
+
+  for (const set of sets) {
+  }
+}
+
+const colors = ["blue", "red"];
+const sizes = ["s", "m", "l", "xl"];
+const styles = ["round neck", "v neck"];
 console.log(cartProduct(colors, sizes));
+
+console.log(cartesian(colors, sizes, styles));
